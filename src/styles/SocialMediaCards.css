@@ -1,0 +1,32 @@
+/* SocialMediaEmbedsCarousel.css */
+.carousel-slide {
+  position: relative;
+}
+
+.card-container {
+  position: relative;
+  z-index: 1; /* Asegura que las tarjetas tengan un z-index inferior al de las flechas de navegación */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container .navigation-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index:5; /* Asegura que las flechas estén por encima de las tarjetas */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Ajusta la posición de las flechas */
+.carousel-container .navigation-button.left {
+  left: -80px; /* Ajusta esta distancia según lo necesites */
+}
+
+.carousel-container .navigation-button.right {
+  right: -80px; /* Ajusta esta distancia según lo necesites */
+}

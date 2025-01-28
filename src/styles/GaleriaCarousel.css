@@ -1,0 +1,35 @@
+/* Contenedor para las imágenes principales */
+.image-container {
+  width: 100%;
+  height: 32rem; /* Fija la altura de las imágenes principales (32rem = 512px) */
+  overflow: hidden; /* Asegura que las imágenes no se desborden */
+  position: relative; /* Permite que las imágenes dentro se ajusten */
+}
+
+/* Estilo para las imágenes dentro del contenedor */
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta las imágenes sin distorsionarlas */
+}
+
+/* Personalización de las miniaturas (thumbs) */
+.carousel .thumb {
+  width:fit-content;
+  height: 60px !important;
+  object-fit: cover !important; /* Para que las miniaturas no se deformen */
+}
+
+/* Efecto para el texto (legend) */
+.carousel .legend {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el texto */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
